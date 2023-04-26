@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    div.tooltip {
+      position: absolute;
+      visibility: visible;
+      z-index: 50;
+      pointer-events: none;
+    }
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Milestone 2</title>
+    <script type="text/javascript"></script>
+    <script src="https://d3js.org/d3.v7.js" charset="utf-8"></script>
+    <style>
+      html,
+      body,
+      #lineChart1 {
+        height: 90%;
+        margin: 0;
+      }
+
+      #lineChart2 {
+        height: 90%;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <span
+      id="mainDiv"
+      style="position: absolute; width: 100%; height: 100%; z-index: 10"
+    >
+      <div>
+        &nbsp;
+        <b>View By:</b>
+        <input id="myCheckbox" type="checkbox" />
+      </div>
+      <style>
+        select {
+          visibility: hidden;
+        }
+
+        #levelLabel {
+          visibility: hidden;
+        }
+
+        #myCheckbox {
+          appearance: none;
+          width: 140px;
+          padding-left: 33px;
+          margin: 10;
+          border-radius: 16px;
+          background: radial-gradient(
+              circle 12px,
+              white 100%,
+              transparent calc(100% + 1px)
+            )
+            palevioletred;
+          transition: 0.3s ease-in-out;
+          background-position: -55px;
+        }
+
+        #myCheckbox::before {
+          content: "By Countries";
+          font: bold 12px/32px Verdana;
+          color: white;
+          text-shadow: 0 1px black;
+        }
+
+        #myCheckbox:checked {
+          padding-left: 28px;
+          background-color: dodgerBlue;
+          background-position: 55px;
+        }
+
+        #myCheckbox:checked::before {
+          content: "By Region";
+        }
+      </style>
+      <div id="lineChart1" style="height: 50%; width: 80%; float: left"></div>
+      <table
+        id="dummyHead"
+        style="text-align: left; visibility: hidden; height: 5%"
+      >
+        <thead>
+          <tr>
+            <th>X|</th>
+            <th>Line|</th>
+            <th>Country Name</th>
+          </tr>
+        </thead>
+      </table>
+      <style>
+        td {
+          border-spacing: 10px 0;
+        }
+      </style>
+
+      <div
+        class="tableDiv"
+        style="height: 40%; width: 16.5%; float: left; visibility: hidden"
+      >
+        <table
+          id="line1Table"
+          style="text-align: left; border: 1px solid black"
+        >
+          <thead style="width: 10%">
+            <tr style="visibility: collapse">
+              <th>X|</th>
+              <th>Line|</th>
+              <th>Country Name</th>
+            </tr>
+          </thead>
+          <tbody style="width: 70%"></tbody>
+        </table>
+        <style>
+          .tableDiv {
+            overflow-x: auto;
+            overflow-y: scroll;
+            white-space: nowrap;
+          }
+        </style>
+      </div>
+
+      <div id="lineChart2" style="height: 50%; width: 80%; float: left"></div>
+      <table
+        id="dummyHead2"
+        style="text-align: left; visibility: hidden; height: 5%;padding-top: 2%;"
+      >
+        <thead>
+          <tr>
+            <th>X|</th>
+            <th>Line|</th>
+            <th>Country Name</th>
+          </tr>
+        </thead>
+      </table>
+      <div
+        class="tableDiv2"
+        style="height: 40%; width: 20%; float: left; visibility: hidden"
+      >
+        <table
+          id="line2Table"
+          style="text-align: left; border: 1px solid black"
+        >
+          <thead style="width: 10%">
+            <tr style="visibility: collapse">
+              <th>X|</th>
+              <th>Line|</th>
+              <th>Country Name</th>
+            </tr>
+          </thead>
+          <tbody style="width: 70%"></tbody>
+        </table>
+        <style>
+          .tableDiv2 {
+            overflow-x: auto;
+            overflow-y: scroll;
+            white-space: nowrap;
+          }
+          td {
+            border-bottom: 1px solid black;
+          }
+
+          tr {
+            height: 30px;
+          }
+        </style>
+      </div>
+      <script src="script.js" defer></script>
+    </span>
+    <div id="gifLoad" style="z-index: 30;position:absolute;top: 40%;left: 40%; overflow: hidden;">
+      <img src="http://24.media.tumblr.com/6ffbbde6a3246af4240ab919f2276ae7/tumblr_mlbyc7yVGN1rh2z1zo1_500.gif"
+      style="width: 300px;height: 300px;margin: -50px -40px -40px -40px;border-radius: 70%;padding: 20px;"></img>
+      <div style="z-index: 31;position:absolute;top: 90%;left: 25%; "><b>Loading Graph...</b></div>
+    </div>
+  </body>
+</html>

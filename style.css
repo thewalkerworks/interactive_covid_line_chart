@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Titan One', cursive;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+div.intro {
+    width: 100%;
+    height: 200%;
+}
+
+div.bgImg {
+    width: 100%;
+    height: 100%;
+    background-image: url('imgs/introBg.png');
+}
+
+img.introAnimal {
+    max-width: 200px;
+    max-height: 300px;
+    width: 43.33%;
+    height: 43.33%;
+}
+
+body {
+    text-align: center;
+    background: #42455a;
+    color: #42455a;
+}
+
+div.text-box-outline {
+    max-height: 300px;
+    margin: 1%;
+    background: #00c2cb;
+
+}
+
+section.outline1 {
+    min-height: 50vh;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #e0ffff;
+}
+
+section.outline2 {
+    min-height: 50vh;
+    max-height: 100vh;
+    background: #e0ffff;
+    color: #5a425a;
+}
+
+img.vis1BearHold {
+    max-width: 500px;
+    max-height: 600px;
+    width: 43.33%;
+    height: 43.33%;
+}
+
+img.vis1BearBook {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+img.vis1Critique {
+    align-items: center;
+    max-width: 70%;
+    width: 100%;
+    height: 100%;
+}
+
+
+section.vis1 {
+    min-height: 50vh;
+    max-height: 500vh;
+}
+
+
+h1.vis1_2Data {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+section.vis1_2 {
+    min-height: 50vh;
+    max-height: 500vh;
+    background: #e0ffff;
+    color: #5a425a;
+}
+
+
+h1.vis1_3Task {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+div.captionVis1_3 {
+    text-align: center;
+    min-height: 50vh;
+    max-height: 10vh;
+}
+
+img.vis1Data {
+    align-items: center;
+    height: 500px;
+}
+
+div.captionVis1_5 {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 220px;
+}
+
+
+section.vis1_4 {
+    background: #e0ffff;
+    color: #5a425a;
+}
+
+img.vis1_4Idiom {
+    height: 500px;
+    background: #e0ffff;
+    color: #5a425a;
+}
+
+img.vis1_5Idiom {
+    height: 500px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+section.vis1_6 {
+    background: #e0ffff;
+}
+
+img.vis1_6Task {
+    height: 500px;
+}
+
+img.vis1_7Task {
+    height: 500px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+section.vis1_8 {
+    background: #e0ffff;
+
+}
+
+img.vis1_solution {
+    height: 500px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+section.outline3 {
+    display: flex;
+    align-items: center;
+    background: #5a425a;
+    color: #e0ffff;
+}
+
+img.vis2DuckHold {
+    align-items: left;
+    height: 400px;
+}
+
+img.vis2Sloth {
+    height: 530px;
+}
+
+section.vis2_2 {
+    min-height: 50vh;
+    max-height: 500vh;
+    background: #e0ffff;
+}
+
+img.vis2Critique {
+    align-items: center;
+    height: 500px;
+}
+
+img.vis2_3 {
+    align-items: center;
+    height: 530px;
+}
+
+img.vis2_Idiom {
+    align-items: center;
+    height: 550px;
+}
+
+section.vis2_4 {
+    background: #e0ffff;
+}
+
+img.vis2_Task {
+    align-items: center;
+    height: 500px;
+}
+
+img.vis2_solution {
+    height: 500px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+img.vis2_solutionHover {
+    position: absolute;
+    height: 100px;
+    top: 83px;
+    left: 377px;
+    z-index: 2;
+}
+
+section.vis2_5 {
+    padding-top: 50px;
+    align-items: center;
+    height: 700px;
+}
+
+img.outro_thank_you {
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+section.ending {
+    background: #e0ffff;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+section.qANDa {
+    background: #5a425a;
+    padding-left: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+img.outro_qANDa {
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+section .text-container {
+    display: flex;
+}
+
+section .text-container .text-box {
+    margin: 10px;
+    background: #00c2cb;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.4s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.revealHover {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.4s all ease;
+}
+
+.revealHover.active {
+    transform: translateY(0);
+    opacity: 1;
+}
